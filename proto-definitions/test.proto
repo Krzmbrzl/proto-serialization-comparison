@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package ProtobufTest;
+
+option optimize_for = SPEED;
+
+
+message TestMessage {
+	optional bool   flag       = 1;
+	optional string text       = 2;
+	optional int32  integer    = 3;
+	optional float  decimal    = 4;
+	optional bytes  binaryData = 5;
+	repeated uint32 numbers    = 6;
+}
