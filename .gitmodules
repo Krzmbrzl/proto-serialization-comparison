@@ -4,3 +4,6 @@
 [submodule "3rdParty/lz4"]
 	path = 3rdParty/lz4
 	url = https://github.com/lz4/lz4.git
+[submodule "3rdParty/google_benchmark"]
+	path = 3rdParty/google_benchmark
+	url = https://github.com/google/benchmark.git
