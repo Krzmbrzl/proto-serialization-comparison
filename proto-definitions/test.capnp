@@ -3,11 +3,12 @@
 using Cxx = import "/capnp/c++.capnp";
 $Cxx.namespace("CapnProtoTest");
 
-struct TestMessage {
-	flag       @0 :Bool;
-	text       @1 :Text;
-	integer    @2 :Int32;
-	decimal    @3 :Float32;
-	binaryData @4 :Data;
-	numbers    @5 :List(UInt32);
+struct AudioData {
+	senderSession    @0 :UInt32;
+	frameNumber      @1 :UInt64;
+	opusData         @2 :Data;
+	isTerminator     @3 :Bool;
+	targetOrContext  @4 :UInt32;
+	positionalData   @5 :List(Float32);
+	volumeAdjustment @6 :Float32;
 }
